@@ -22,8 +22,6 @@ private  var binding = ViewBinding.bind(view)
         binding.title.text = CardInfo.title
         binding.priority.text = CardInfo.priority
 
-        var card: CardView = binding.CARD
-
 
         when (CardInfo.priority.toLowerCase()){
             "high"->     binding.CARD.setCardBackgroundColor(Color.parseColor("#f05454"))
