@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.mytheme"
         tools:targetApi="31">
-        <activity  android:name=".UpdateCard"/>
+        <activity  android:name=".UpdateCard"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
         <activity  android:name=".MainActivity"/>
-        <activity  android:name=".CreateCard"/>
+        <activity  android:name=".CreateCard" android:windowSoftInputMode="adjustResize">
+        </activity>
         <activity
             android:name=".SplashScreen"
             android:exported="true">

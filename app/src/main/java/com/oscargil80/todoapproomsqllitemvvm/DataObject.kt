@@ -4,10 +4,6 @@ object DataObject {
 
     var lisdata = mutableListOf<CardInfo>()
 
-    init {
-
-    }
-
     fun setData(title: String, priority: String) {
         lisdata.add(CardInfo(title, priority))
     }
