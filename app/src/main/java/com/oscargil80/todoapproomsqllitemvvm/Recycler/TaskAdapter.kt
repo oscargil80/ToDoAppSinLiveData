@@ -1,9 +1,10 @@
-package com.oscargil80.todoapproomsqllitemvvm
+package com.oscargil80.todoapproomsqllitemvvm.Recycler
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.oscargil80.todoapproomsqllitemvvm.CardInfo
+import com.oscargil80.todoapproomsqllitemvvm.R
 
 
 class TaskAdapter(

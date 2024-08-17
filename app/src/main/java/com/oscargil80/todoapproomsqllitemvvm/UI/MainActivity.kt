@@ -1,10 +1,13 @@
-package com.oscargil80.todoapproomsqllitemvvm
+package com.oscargil80.todoapproomsqllitemvvm.UI
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
+import com.oscargil80.todoapproomsqllitemvvm.*
+import com.oscargil80.todoapproomsqllitemvvm.Recycler.TaskAdapter
 import com.oscargil80.todoapproomsqllitemvvm.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -15,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
     private var cardInfo:List<CardInfo> = CardInfoProvider.lcardInfo
 
+
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -30,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.deleteAll.setOnClickListener {
-            DataObject.deleteAll()
+           DataObject.deleteAll()
             GlobalScope.launch {
                 database.dao().deleteAll()
             }
@@ -39,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         setRecycler()
     }
 
-    private fun setRecycler() {
+    private fun setRecycler()
+    {
         binding.recyclerView.adapter = TaskAdapter(DataObject.getAllData())
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
     }

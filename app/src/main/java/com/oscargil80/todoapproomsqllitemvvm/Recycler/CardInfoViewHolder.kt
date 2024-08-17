@@ -1,13 +1,11 @@
-package com.oscargil80.todoapproomsqllitemvvm
+package com.oscargil80.todoapproomsqllitemvvm.Recycler
 
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.view.View
-import androidx.appcompat.view.menu.MenuView.ItemView
-import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.oscargil80.todoapproomsqllitemvvm.CardInfo
+import com.oscargil80.todoapproomsqllitemvvm.UI.UpdateCard
 import com.oscargil80.todoapproomsqllitemvvm.databinding.ViewBinding
 
 class CardInfoViewHolder(view: View) : RecyclerView.ViewHolder(view) {

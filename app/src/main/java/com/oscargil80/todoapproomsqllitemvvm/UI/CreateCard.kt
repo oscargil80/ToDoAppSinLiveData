@@ -1,16 +1,19 @@
-package com.oscargil80.todoapproomsqllitemvvm
+package com.oscargil80.todoapproomsqllitemvvm.UI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.Room
+import com.oscargil80.todoapproomsqllitemvvm.DataObject
+import com.oscargil80.todoapproomsqllitemvvm.Entity
 import com.oscargil80.todoapproomsqllitemvvm.databinding.ActivityCreateCardBinding
+import com.oscargil80.todoapproomsqllitemvvm.myDatabase
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class CreateCard : AppCompatActivity() {
     lateinit var binding: ActivityCreateCardBinding
-    private lateinit var database:myDatabase
+    private lateinit var database: myDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateCardBinding.inflate(layoutInflater)

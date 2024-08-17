@@ -1,12 +1,13 @@
-package com.oscargil80.todoapproomsqllitemvvm
+package com.oscargil80.todoapproomsqllitemvvm.UI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.room.Room
-import com.oscargil80.todoapproomsqllitemvvm.databinding.ActivityMainBinding
+import com.oscargil80.todoapproomsqllitemvvm.DataObject
+import com.oscargil80.todoapproomsqllitemvvm.Entity
 import com.oscargil80.todoapproomsqllitemvvm.databinding.ActivityUpdateCardBinding
+import com.oscargil80.todoapproomsqllitemvvm.myDatabase
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
